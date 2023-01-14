@@ -1,56 +1,52 @@
 <section id="login" class="">
-   <div class="modal fade shadow" data-bs-backdrop="static" data-bs-keyboard="false"
-       tabindex="-1" aria-labelledby="loginLabelID" aria-hidden="true">
-       <div class="modal-dialog modal-dialog-centered modal-sm">
-           <div class="modal-content">
-               <div class="modal-header">
-                   <h1 class="modal-title fs-5" id="loginLabelID">Inicio de Sesión</h1>
-                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-               </div>
-               <div class="masc-modal">
-
-                  <div class="m-5 p-2 sombra2">
-                     <form [formGroup]="formLogin" class="m-5" (ngSubmit)="onEnviar($event)">
-                        <div class="m-2">
-                           <img class="img-fluid" src="./assets/img/baner01.png" alt="" />
-                        </div>
-                        <div>
-                           <div class="m-3">
-                              <label for="inputEmailID" class="form-label">Email</label>
-                              <input type="email" formControlName="email" [ngClass]="{'is-invalid': Email?.errors && Email?.touched, 'is-valid': !Email?.errors && Email?.touched}" class="form-control" id="inputEmailID"
-                                 aria-describedby="emailHelp" />
-                              <div *ngIf="Email?.errors && Email?.touched">
-                                 <p *ngIf="Email?.hasError('required')" class="text-danger">
-                                    Este campo no puede estar vacio
-                                 </p>
-                                 <p *ngIf="Email?.hasError('email')" class="text-danger">
-                                    Formato de email no válido
-                                 </p>
-                              </div>
-                           </div>
-                           <div class="m-3">
-                              <label for="inputClaveID" class="form-label">Contraseña</label>
-                              <input type="password" formControlName="password" [ngClass]="{'is-invalid': Password?.errors && Password?.touched, 'is-valid': !Password?.errors && Password?.touched}" class="form-control" id="inputClaveID" />
-                              <div *ngIf="Password?.errors && Password?.touched">
-                                 <p *ngIf="Password?.hasError('required')" class="text-danger">
-                                    Este campo no puede estar vacio
-                                 </p>
-                                 <p *ngIf="Password?.errors?.['minlength']" class="text-danger">
-                                    La contraseña debe ser de 8 o más caracteres
-                                 </p>
-                              </div>
-                           </div>
-                           
-                           <button name="btnVisualizar" type="submit" class="btn btn-primary m-3">Visualizar</button>
-                        </div>
-                     </form>
-                  
-                     
+   <div class="modal fade shadow" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+      aria-labelledby="loginLabelID" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-sm">
+         <div class="modal-content">
+            <div class="modal-header">
+               <h1 class="modal-title fs-5" id="loginLabelID">Abrir Portfolio</h1>
+               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="masc-modal m-5 p-2 sombra2">
+               <form [formGroup]="formLogin" class="m-5" (ngSubmit)="onEnviar($event)">
+                  <div class="m-2">
+                     <img class="img-fluid" src="./assets/img/baner01.png" alt="" />
                   </div>
-                   
-                   
-               </div>
-           </div>
-       </div>
+                  <div>
+                     <div class="m-3">
+                        <label for="inputEmailID" class="form-label">Email</label>
+                        <input type="email" formControlName="email"
+                           [ngClass]="{'is-invalid': Email?.errors && Email?.touched, 'is-valid': !Email?.errors && Email?.touched}"
+                           class="form-control" id="inputEmailID" aria-describedby="emailHelp" />
+                        <div *ngIf="Email?.errors && Email?.touched">
+                           <p *ngIf="Email?.hasError('required')" class="text-danger">
+                              Este campo no puede estar vacio
+                           </p>
+                           <p *ngIf="Email?.hasError('email')" class="text-danger">
+                              Formato de email no válido
+                           </p>
+                        </div>
+                     </div>
+                     <div class="m-3">
+                        <label for="inputClaveID" class="form-label">Contraseña</label>
+                        <input type="password" formControlName="password"
+                           [ngClass]="{'is-invalid': Password?.errors && Password?.touched, 'is-valid': !Password?.errors && Password?.touched}"
+                           class="form-control" id="inputClaveID" />
+                        <div *ngIf="Password?.errors && Password?.touched">
+                           <p *ngIf="Password?.hasError('required')" class="text-danger">
+                              Este campo no puede estar vacio
+                           </p>
+                           <p *ngIf="Password?.errors?.['minlength']" class="text-danger">
+                              La contraseña debe ser de 8 o más caracteres
+                           </p>
+                        </div>
+                     </div>
+
+                     <button name="btnEnviar" type="submit" class="btn btn-primary m-3">Enviar</button>
+                  </div>
+               </form>
+            </div>
+         </div>
+      </div>
    </div>
 </section>

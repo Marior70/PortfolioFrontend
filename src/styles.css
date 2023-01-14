@@ -22,3 +22,46 @@ body {
 .oculto {
    display:none;
 }
+
+.pad-top {
+   padding-top: 100px;
+}
+
+.seccion{
+   height: 100vh;
+}
+
+.btn-borrar {
+   padding: 2px 8px;
+   border: 1px solid red;
+   border-radius: 50%;
+   -webkit-border-radius: 50%;
+   -moz-border-radius: 50%;
+   -ms-border-radius: 50%;
+   -o-border-radius: 50%;
+   background: red;
+   color: white;
+}
+.btn-edt {
+   padding: 2px 6px;
+   border: 1px solid blue;
+   border-radius: 50%;
+   -webkit-border-radius: 50%;
+   -moz-border-radius: 50%;
+   -ms-border-radius: 50%;
+   -o-border-radius: 50%;
+   background: blue;
+   color: white;
+}
+
+.btn-nuevo {
+   padding: 2px 8px;
+   border: 1px solid green;
+   border-radius: 50%;
+   -webkit-border-radius: 50%;
+   -moz-border-radius: 50%;
+   -ms-border-radius: 50%;
+   -o-border-radius: 50%;
+   background: green;
+   color: midnightblue;
+}

@@ -36,3 +36,11 @@ testem.log
 # System files
 .DS_Store
 Thumbs.db
+
+# Otros
+src/assets/datos/
+src/assets/img/baner01.png
+src/assets/img/f1.png
+src/assets/img/f2.png
+src/assets/img/fondo01.jpg
+src/assets/img/switches.png
