@@ -1,1 +1,24 @@
-/* You can add global styles to this file, and also import other style files */
+html {
+   box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+   box-sizing: inherit;
+}
+/*
+* {
+   margin: 0;
+   padding: 0;;
+}
+*/
+body {
+   margin-top: 0;
+   color: midnightblue;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.oculto {
+   display:none;
+}

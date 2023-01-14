@@ -22,6 +22,9 @@ import { NewEducacionComponent } from './componentes/form-new/new-educacion/new-
 import { NewCursoComponent } from './componentes/form-new/new-curso/new-curso.component';
 import { NewAptitudComponent } from './componentes/form-new/new-aptitud/new-aptitud.component';
 import { NewProyectoComponent } from './componentes/form-new/new-proyecto/new-proyecto.component';
+import { NavbarComponent } from './componentes/navbar/navbar.component';
+import { FooterComponent } from './componentes/footer/footer.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -46,11 +49,14 @@ import { NewProyectoComponent } from './componentes/form-new/new-proyecto/new-pr
     NewEducacionComponent,
     NewCursoComponent,
     NewAptitudComponent,
-    NewProyectoComponent
+    NewProyectoComponent,
+    NavbarComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
