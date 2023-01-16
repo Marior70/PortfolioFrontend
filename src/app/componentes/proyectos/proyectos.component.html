@@ -1,1 +1,30 @@
-<p>proyectos works!</p>
+<section id="proyectos" class="container-lg pad-top pb-5 mb-5">
+   <header class="ms-3">
+       <h2 class=""><i>Proyectos</i></h2>
+       <button class="btn-nuevo oculto" type="button">
+           <b>+</b>
+       </button>
+   </header>
+   <ul>
+    <li *ngFor="let proyectos of proyectosList">
+        <article class="d-flex-xl align-items-center art-pro">
+            <div class="flex-shrink-0">
+                <div class="d-flex align-items-center">
+                    <!-- <div class="flex-shrink-1 mx-3">
+                        <img [src]="proyectos.logo.imagen" width="60px" height="60px"
+                            [title]="proyectos.logo.title" [alt]="proyectos.logo.alt" />
+                    </div> -->
+                    <div class="flex-grow-2">
+                        <div class="align-middle">
+                            <h3 class="fs-5 fw-bold">{{proyectos.nombre}}</h3>
+                            <p class="fs-6">{{proyectos.descripcion}}</p>
+                            <a [href]="proyectos.link" class="">{{proyectos.link}}</a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </article>
+    </li>
+</ul>
+</section>

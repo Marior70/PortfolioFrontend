@@ -1,1 +1,51 @@
-<p>persona works!</p>
+<section id="encabezado" class="container-lg pad-top">
+   <div class="baner b-r pt-5">
+       <!-- <button class="btn-edt mt-5 ms-2 oculto" type="button" onclick="edtBaner()">
+           <i class="bi bi-pen"></i>
+       </button> -->
+   </div>
+   <div class="">
+      <img id="mifotoID" class="sombra2" [src]="misDatos.foto" width="194px" height="194px" 
+            alt="Foto de perfil de {{misDatos.nombres}} {{misDatos.apellidos}}" title="{{misDatos.nombres}} {{misDatos.apellidos}}"/>
+       
+       <!-- <button class="btn-edt oculto" type="button" onclick="edtFoto()">
+           <i class="bi bi-pen"></i>
+       </button> -->
+
+   </div>
+   <div class="mx-auto">
+       <div class="">
+           <h2 id="nombreID" class="mx-lg-3"><strong>{{misDatos.nombres}} {{misDatos.apellidos}}</strong></h2>
+           <!-- <button class="btn-edt me-right oculto" type="button" onclick="edtDatosPersonales()">
+               <i class="bi bi-pen"></i>
+           </button> -->
+       </div>
+       <div class="fs-5">
+           <p id="titulo1ID">
+               <i class="bi bi-briefcase mx-3 text-primary"></i>
+               <strong>{{misDatos.titulo}}</strong>
+               <!-- <br>
+               <b class="mx-5 p-1"><i>& </i>{{misDatos.titulo2}}</b> -->
+           </p>
+           <div>
+               <!-- Contenedor con un INPUT para edición del parrafo desde teclado -->
+               <!-- <input id="edt_titulos" class="oculto" type="text" oninput="cambiarParrafo()"> -->
+           </div>
+           <p id="localidadID"><i class="bi bi-house-door mx-3 text-black"></i>{{misDatos.localidad}}, {{misDatos.provincia}} - AR</p>
+           <p id="emailID"><i class="bi bi-envelope mx-3 text-success"></i>{{misDatos.email}}</p>
+           <p id="movilID"><i class="bi bi-phone mx-3 text-danger"></i>{{misDatos.movil}}</p>
+       </div>
+   </div>
+   <div class="art-enc b-r p-3">
+       <header>
+           <h3 class="m-3"><i>Acerca de</i></h3>
+       </header>
+       <p id="txtAcercadeID" class="m-3">{{misDatos.acercade}}</p>
+       <!-- Contenedor con un INPUT para edición del parrafo desde teclado -->
+       <!-- <div>
+           <input id="edt_acerca_de" class="oculto" type="text" oninput="edtContenido(this.value)">
+       </div> -->
+       <!-- Input para edición del párrafo desde un archivo -->
+       <!-- <input id="edt_acercade" class="" type="file" onchange="leerArchivo(this)"> -->
+   </div>
+</section>

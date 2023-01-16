@@ -23,8 +23,13 @@ body {
    display:none;
 }
 
+.disable {
+   opacity: 0.6;
+   cursor:default;
+}
+
 .pad-top {
-   padding-top: 100px;
+   padding-top: 80px;
 }
 
 .seccion{

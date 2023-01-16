@@ -1,1 +1,32 @@
-<p>experiencias works!</p>
+<section id="experiencia" class="container-lg pad-top">
+   <header class="ms-3">
+       <h2 class=""><i>Experiencia</i></h2>
+       <button class="btn-nuevo oculto" type="button">
+           <b>+</b>
+       </button>
+   </header>
+
+   <ul>
+       <li *ngFor="let experiencia of experienciaList">
+           <article class="d-flex-xl align-items-center art-exp">
+               <div class="flex-shrink-0">
+                   <div class="d-flex align-items-center">
+                       <div class="flex-shrink-1 mx-3">
+                           <img [src]="experiencia.logo" width="60px" height="60px" title="Net-M"
+                               alt="'Logo de ' + {{experiencia.entidad}}" [title]="experiencia.entidad" />
+                       </div>
+                       <div class="flex-grow-2">
+                           <div class="align-middle">
+                               <h3 class="fs-4 fw-bold">{{experiencia.entidad}}</h3>
+                               <h4 class="fs-6">{{experiencia.rol}}</h4>
+                           </div>
+                           <div class="fs-6">{{experiencia.fechaIni}} - {{experiencia.fechaFin}}</div>
+                       </div>
+                   </div>
+               </div>
+               <div class="flex-grow-1 p-3 fs-6 align-middle">{{experiencia.descripcion}}</div>
+           </article>
+       </li>
+   </ul>
+
+</section>
