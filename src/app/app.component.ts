@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { PortfolioService } from 'src/app/servicios/portfolio.service';
 
 
@@ -10,11 +11,15 @@ import { PortfolioService } from 'src/app/servicios/portfolio.service';
 export class AppComponent implements OnInit {
    title = 'frontend';
    miNombre: any;
-   constructor(private datosPortfolio: PortfolioService) { }
+   constructor(private datosPortfolio: PortfolioService, private ruta: Router) { }
 
    ngOnInit(): void {
       this.datosPortfolio.obtenerDatos().subscribe(datos => {
-         this.miNombre = datos.personas;
+         this.miNombre = datos.personas[0];
       });
+   }
+
+   login() {
+      this.ruta.navigate(['login']);
    }
 }

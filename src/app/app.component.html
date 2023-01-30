@@ -1,14 +1,14 @@
-<div class="container-fluid portada">
+<div class="container-fluid "> <!-- portada -->
    <app-menu></app-menu>
-   <div class="container-lg centrar text-white">
+   <!-- <div class="container-lg centrar text-white">
       <h1 class="shadow">Hola!, soy <strong>{{miNombre.nombres}} {{miNombre.apellidos}}</strong></h1>
       <hr>
-      <p class="fs-4">Te invito a que leas sobre mí.</p>
-      <button id="btnLogin" type="button" class="nav-link mt-5 btn fs-5 text-light mx-auto"
-         data-bs-toggle="modal" data-bs-target="#formLogin" onclick="login()">
+      <p class="fs-4 mb-5">Te invito a que leas sobre mí.</p>
+      <button id="btnLogin" type="button" class="nav-link btn btn-link fs-5 text-light mx-auto"
+         data-bs-toggle="modal" data-bs-target="#formLogin" (click)="login()">
          <strong><i class="bi bi-hand-thumbs-up text-warning"></i> Abrir Portfolio</strong>
-      </button>
-   </div>
+      </button> 
+   </div> -->
    <router-outlet></router-outlet>
    <app-footer></app-footer>
 </div>
