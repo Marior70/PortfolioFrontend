@@ -17,7 +17,7 @@ export class PersonaComponent implements OnInit {
          // Si tenemos un único Json con los datos de cada componente, cada componente es un elemento de un array, por lo tanto se debe referenciar con el índice respectivo para obtener los datos.
          // this.misDatos = datos[0];
 
-         this.misDatos = datos.personas; // Le asignamos el primer registro de json, que es el que corresponde al encabezado
+         this.misDatos = datos.personas[0]; // Le asignamos el primer registro de json, que es el que corresponde al encabezado
       });
    }
 }

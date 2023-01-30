@@ -4,36 +4,35 @@ import { Router } from '@angular/router';
 // import { AutenticacionService } from 'src/app/servicios/autenticacion.service';
 
 @Component({
-  selector: 'app-login',
-  templateUrl: './login.component.html',
-  styleUrls: ['./login.component.css']
+   selector: 'app-login',
+   templateUrl: './login.component.html',
+   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
-  formLogin: FormGroup;
-  constructor(private formBuilder: FormBuilder, private ruta: Router) { // , private autenticacionService: AutenticacionService
-    this.formLogin = this.formBuilder.group(
-      {
-        email: ['', [Validators.required, Validators.email]],
-        password: ['', [Validators.required, Validators.minLength(8)]],
-      }
-    )
-  }
+   formLogin: FormGroup;
+   constructor(private formBuilder: FormBuilder, private ruta: Router) { // , private autenticacionService: AutenticacionService
+      this.formLogin = this.formBuilder.group(
+         {
+            email: ['', [Validators.required, Validators.email]],
+            password: ['', [Validators.required, Validators.minLength(8)]],
+         }
+      )
+   }
 
-  ngOnInit(): void {
-  }
+   ngOnInit(): void {
+   }
 
-  get Email() {
-    return this.formLogin.get('email');
-  }
+   get Email() {
+      return this.formLogin.get('email');
+   }
 
-  get Password() {
-    return this.formLogin.get('password');
-  }
+   get Password() {
+      return this.formLogin.get('password');
+   }
 
-  onEnviar(event: Event) {
-    event.preventDefault;
-    // implementar seguridad 
-    this.ruta.navigate(['/portfolio']);
-  }
-
+   onEnviar(event: Event) {
+      event.preventDefault;
+      // implementar login con seguridad para habilitar la visualización o edición del portfolio
+      this.ruta.navigate(['portfolio']);
+   }
 }

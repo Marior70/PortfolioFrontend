@@ -1,6 +1,6 @@
 .baner {
    height: 35vh;
-   background: url("../../../assets/img/f4.png") no-repeat;
+   background: url("../../../assets/img/img03.png") no-repeat;
    background-size: cover;
    /* opacity: 0.75; */
 }
@@ -23,4 +23,5 @@
    border: 1px solid rgb(232, 255, 156);
    border-top-left-radius: 1rem;
    border-bottom-right-radius: 3rem;
+   background-color:whitesmoke;
 }

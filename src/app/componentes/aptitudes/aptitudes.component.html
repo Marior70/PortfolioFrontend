@@ -1,11 +1,8 @@
 <section id="aptitudes" class="container-lg pad-top mb-5">
    <header class="ms-3">
       <h2 class=""><i>Aptitudes</i></h2>
-      <button class="btn-edt " type="button">
-         <i class="bi bi-pen"></i>
-      </button>
-      <button class="btn-borrar oculto" type="button">
-         <b>x</b>
+      <button class="btn-nuevo oculto" type="button">
+         <b>+</b>
       </button>
    </header>
 
@@ -13,15 +10,23 @@
       <ul class="container py-4">
          <li *ngFor="let item of aptitudesList">
             <p class="mb-0"><i class="bi bi-briefcase m-3 text-primary"></i>{{item.aptitud}}</p>
-            <div class="progress mb-3">
+            <div class="progress mb-4">
                <div class="progress-bar bg-success bg-opacity-75" role="progressbar" [style.width.%]="item.valor"
                   [attr.aria-valuenow]="item.valor" aria-valuemin="0" aria-valuemax="100">{{item.valor}} %</div>
+            </div>
+            <div>
+               <button class="btn-edt mx-2 oculto" type="button">
+                  <i class="bi bi-pen"></i>
+               </button>
+               <button class="btn-borrar mb-4 oculto" type="button">
+                  <b>X</b>
+               </button>
             </div>
          </li>
       </ul>
    </div>
 
-<!-- Código del template estático. Se repetía por cada aptitud a mostrar
+   <!-- Código del template estático. Se repetía por cada aptitud a mostrar
 
    <div class="container-sm bg-section">
       <div class="container py-4">
@@ -34,5 +39,5 @@
       </div>
    </div>
 -->
-   
+
 </section>

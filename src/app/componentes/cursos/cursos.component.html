@@ -17,13 +17,21 @@
                         </div>
                         <div class="flex-grow-2">
                             <div class="align-middle">
-                                <h3 class="fs-5 fw-bold">{{cursos.entidad}}</h3>
+                                <h3 class="fs-5 fw-bold mt-3">{{cursos.entidad}}</h3>
                                 <h4 class="fs-6">{{cursos.tema}}</h4>
                             </div>
-                            <div class="fs-6">{{cursos.fechaIni}} - {{cursos.fechaFin}}</div>
+                            <div class="fs-6 mb-3">{{cursos.fechaIni}} - {{cursos.fechaFin}}</div>
                         </div>
                     </div>
                 </div>
+                <div>
+                  <button class="btn-edt mx-2 oculto" type="button">
+                     <i class="bi bi-pen"></i>
+                  </button>
+                  <button class="btn-borrar mb-4 oculto" type="button">
+                     <b>X</b>
+                  </button>
+               </div>
             </article>
         </li>
     </ul>
