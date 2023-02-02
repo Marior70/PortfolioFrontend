@@ -4,13 +4,13 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
-import { MenuComponent } from './componentes/menu/menu.component';
+import { NavbarComponent } from './componentes/navbar/navbar.component';
 import { FooterComponent } from './componentes/footer/footer.component';
+import { PortadaComponent } from './componentes/portada/portada.component';
 
 import { LoginComponent } from './componentes/login/login.component';
 import { PortfolioComponent } from './componentes/portfolio/portfolio.component';
 
-import { NavbarComponent } from './componentes/navbar/navbar.component';
 import { PersonaComponent } from './componentes/persona/persona.component';
 import { ExperienciasComponent } from './componentes/experiencias/experiencias.component';
 import { EducacionComponent } from './componentes/educacion/educacion.component';
@@ -38,11 +38,11 @@ import { HttpClientModule } from '@angular/common/http';
 @NgModule({
    declarations: [
       AppComponent,
-      MenuComponent,
+      NavbarComponent,
       FooterComponent,
+      PortadaComponent,
       LoginComponent,
       PortfolioComponent,
-      NavbarComponent,
       PersonaComponent,
       ExperienciasComponent,
       EducacionComponent,
