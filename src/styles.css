@@ -16,7 +16,7 @@ html {
 body {
    margin-top: 0;
    color: midnightblue;
-   /* background: url("/assets/img/img03.png") no-repeat; */
+   background: url("/assets/img/img03.png") no-repeat;
    background-size: cover;
    background-attachment: fixed;
    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -32,11 +32,15 @@ body {
 }
 
 .pad-top {
-   padding-top: 80px;
+   padding-top: 7rem; /* 80px; */
 }
 
 .seccion{
    height: 100vh;
+}
+
+.txt {
+   text-shadow: 3px 1px 3px black;
 }
 
 .btn-borrar {

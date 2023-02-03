@@ -22,11 +22,10 @@ export class PortadaComponent implements OnInit {
          // this.miNombre = datos.personas[0]; // Le asignamos el primer registro de json, que es el que corresponde al encabezado
 
          // Si cada componente tiene su json:
-         this.miNombre = datos;
-
-         
+         this.miNombre = datos.personas[0];         
       });
    }
+   
    login() {
       this.ruta.navigate(['login']); 
    }
